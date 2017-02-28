@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <LinearLayout
+     android:id="@+id/ly_layout"
+     android:background="@color/transparent"
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+     android:layout_height="match_parent">
+  <SeekBar
+      android:id="@+id/music_progress"
+      android:layout_width="match_parent"
+      android:visibility="gone"
+      android:layout_height="wrap_content"
+      android:max="100" />
+
+  <TextView
+      android:id="@+id/tv_player"
+      android:background="@drawable/music_btn_rect_border_larger"
+      android:layout_width="55dp"
+      android:layout_margin="15dp"
+      android:gravity="center"
+      android:textColor="@color/white"
+      android:text="结束"
+      android:layout_height="22dp" />
+
+  <com.example.dell.musicplayer.LyricView
+      android:id="@+id/lvView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/transparent" />
+
+ </LinearLayout>
+
+</LinearLayout>
